@@ -4,10 +4,14 @@ const loadHomePage = () => {
 
     
     const restaurantName = document.createElement('div');
+    const restaurantDesc = document.createElement('div');
     const buttonContainer = document.createElement('div');
 
     restaurantName.classList.add('restaurant-name-text');
     restaurantName.textContent = 'Adam Style Cafe!';
+
+    restaurantDesc.classList.add('restaurant-desc');
+    restaurantDesc.textContent =`"We're not even a cafe!"`;
 
     buttonContainer.classList.add('middle-button-container');
 
@@ -30,10 +34,13 @@ const loadHomePage = () => {
     contactBtn.classList.add('contactBtn');
     menuBtn.classList.add('menuBtn');
 
+
+
     buttonContainer.appendChild(contactBtn);
     buttonContainer.appendChild(menuBtn);
 
     parent.appendChild(restaurantName);
+    parent.appendChild(restaurantDesc);
     parent.appendChild(buttonContainer);
     parent.classList.add('home-container');
 

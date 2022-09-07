@@ -3,38 +3,55 @@
 
 * {
     font-family: 'Roboto';
+    
+}
+
+html {
+    background: url(images/background.jpg);
+    background-attachment: fixed;
+    background-repeat: none;
 }
 body {
-    background: url(background.jpg);
-    
+   
+    box-sizing: border-box;
     
    
 }
 html,body {
     margin: 0;
     height: 100%;
-    position: relative;
+    display: flex;
+    flex-flow: column;
 }
 
 div#content {
-    height: 100%;
-
-
+    
+    flex: 1 1 auto;
+   
+    
 }
 
 .home-container {
+    
     height: 100%;
-
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 24px;
+
+    animation: fadeIn .75s;
 }
 
 .restaurant-name-text {
     font-size: 64px;
     font-weight: bolder;
+    color: white;
+}
+
+.restaurant-desc {
+    font-size: 32px;
+    font-style: italic;
     color: white;
 }
 
@@ -78,9 +95,11 @@ div#content {
 }
 
 .header{
-    position: fixed;
+   
     width: 100%;
-    top: 30px;
+    background-color: rgba(0, 0, 0, 0.355);
+    padding-top: 24px;
+    padding-bottom: 24px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -99,9 +118,7 @@ div#content {
     
 }
 
-.menu-list li{
-    transition: .2s;
-}
+
 
 .menu-list li:hover {
     
@@ -117,4 +134,35 @@ div#content {
 .selected {
     border-bottom: solid 2px white;
 }
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    animation: fadeIn .75s;
+    
+}
+
+.contact-box {
+    background-color: rgba(0, 0, 0, 0.355);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: white;
+    font-size: 24px;
+}
+
+.contact-box p {
+    margin: 0
+}
+
+
+@keyframes fadeIn {
+    0% { opacity: 0;}
+    100% {opacity: 100;}
+}
+
+
 

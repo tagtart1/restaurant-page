@@ -1,0 +1,54 @@
+.menu-item img {
+    width: 250px;
+    height: 250px;
+}
+
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    animation: fadeIn .75s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0;}
+    100% {opacity: 100;}
+}
+
+.menu-box {
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.336);
+    grid-template-columns: 1fr 1fr;
+    width: fit-content;
+    padding: 24px;
+    gap: 100px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.menu-item {
+    display: flex;
+    gap: 24px;
+}
+
+.menu-item div {
+    color: white;
+    font-size: 24px;
+    width: 450px;
+}
+
+h4 {
+    color: white;
+    padding-bottom: 4px;
+    margin-top:25px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    
+    border-bottom: solid 1px white;
+}
+
+
+
+
+
