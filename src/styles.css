@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+* {
+    font-family: 'Roboto';
+}
+body {
+    background: url(background.jpg);
+    
+    
+   
+}
+html,body {
+    margin: 0;
+    height: 100%;
+    position: relative;
+}
+
+div#content {
+    height: 100%;
+
+
+}
+
+.home-container {
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.restaurant-name-text {
+    font-size: 64px;
+    font-weight: bolder;
+    color: white;
+}
+
+.middle-button-container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.contact-btn,
+.menu-btn {
+    color: white;
+    
+    background-color: transparent;
+    border: solid 4px black;
+    width: 175px;
+    height: 100px;
+    transition: .1s;
+    cursor: pointer;
+}
+
+.contact-btn:hover,
+.menu-btn:hover {
+    transform: scale(1.05);
+}
+
+.contact-btn p {
+    margin: 0;
+}
+
+.contact-btn {
+    border-color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.menu-btn {
+    font-size: 36px;
+    
+    border-color: rgb(197, 197, 0);
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-list {
+    
+    list-style: none;
+    display: flex;
+    margin: 0;
+    color: white;
+    gap: 36px;
+    font-size: 30px;
+
+    cursor: pointer;
+    
+}
+
+.menu-list li{
+    transition: .2s;
+}
+
+.menu-list li:hover {
+    
+    transform: scale(1.1);
+}
+
+.restaurant-name-headertxt {
+    color: white;
+    font-weight: bolder;
+    font-size: 54px;
+}
+
+.selected {
+    border-bottom: solid 2px white;
+}
+
